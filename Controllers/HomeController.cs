@@ -41,23 +41,9 @@ namespace Task5.Controllers
             string output = string.Empty;
 
 
-            if(firstNum )
-            
-            if (firstNumber < 0 || secondNumber < 0){
-                output = "Enter only positive numbers i.e. numbers above zero";
-            } else {
-            
-                double firstNumberSquareRoot = Math.Sqrt(firstNumber);
-                double secondNumberSquareRoot = Math.Sqrt(secondNumber);
-
-                if(firstNumberSquareRoot > secondNumberSquareRoot){
-                    output = "The number "+ firstNumber + " with Square root "+ firstNumberSquareRoot +" has a higher square root than the number "+secondNumber +" with square root " + secondNumberSquareRoot;
-                } else if (firstNumberSquareRoot < secondNumberSquareRoot){
-                    output = "The number "+ secondNumber + " with Square root "+ secondNumberSquareRoot +" has a higher square root than the number "+firstNumber +" with square root " + firstNumberSquareRoot;
-                } else if (firstNumberSquareRoot == secondNumberSquareRoot){
-                    output = "You inputted similiar numbers, kindly enter different numbers";
-                }
-            }
+            if(firstNum == "" || secondNum == ""){
+                output = "Kindly input values";
+            }else if(fi)
 
             return output;
         }
