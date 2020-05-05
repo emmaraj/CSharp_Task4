@@ -49,11 +49,11 @@ namespace Task5.Controllers
                 double secondNumberSquareRoot = Math.Sqrt(secondNumber);
 
                 if(firstNumberSquareRoot > secondNumberSquareRoot){
-                    output = "The number "+ firstNumber + "with Square root "+ firstNumberSquareRoot +" has a higher square root than the number "+secondNumber +" with square root " + secondNumberSquareRoot;
+                    output = "The number "+ firstNumber + " with Square root "+ firstNumberSquareRoot +" has a higher square root than the number "+secondNumber +" with square root " + secondNumberSquareRoot;
                 } else if (firstNumberSquareRoot < secondNumberSquareRoot){
-                    output = "The number "+ secondNumber + "with Square root "+ secondNumberSquareRoot +" has a higher square root than the number "+firstNumber +" with square root " + firstNumberSquareRoot;
+                    output = "The number "+ secondNumber + " with Square root "+ secondNumberSquareRoot +" has a higher square root than the number "+firstNumber +" with square root " + firstNumberSquareRoot;
                 } else if (firstNumberSquareRoot == secondNumberSquareRoot){
-                    output = "You inputted similiar numbers, kindly ennter different numbers";
+                    output = "You inputted similiar numbers, kindly enter different numbers";
                 }
             }
 
