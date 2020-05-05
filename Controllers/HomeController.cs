@@ -40,6 +40,8 @@ namespace Task5.Controllers
             int secondNumber = int.Parse(secondNum);
             string output = string.Empty;
 
+
+            if(firstNum )
             
             if (firstNumber < 0 || secondNumber < 0){
                 output = "Enter only positive numbers i.e. numbers above zero";
