@@ -23,6 +23,11 @@ namespace Task5.Controllers
             return View();
         }
 
+        public IActionResult Add()
+        {
+            return View();
+        }
+
         [HttpPost]
         public IActionResult Add(string firstNumber, string secondNumber)
         {
