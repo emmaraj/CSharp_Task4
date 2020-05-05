@@ -23,6 +23,38 @@ namespace Task5.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult Add(string firstNumber, string secondNumber)
+        {
+            ViewBag.Result = square(firstNumber, secondNumber);
+            return View();
+        }
+
+        private static String square(string firstNum, string secondNum){
+            int firstNumber = int.Parse(firstNum);
+            int secondNumber = int.Parse(secondNum);
+            string output = string.Empty;
+
+            
+            if (firstNumber < 0 || secondNumber < 0){
+                output = "Enter only positive numbers i.e. numbers above zero";
+            } else {
+            
+                double firstNumberSquareRoot = Math.Sqrt(firstNumber);
+                double secondNumberSquareRoot = Math.Sqrt(secondNumber);
+
+                if(firstNumberSquareRoot > secondNumberSquareRoot){
+                    output = "The number "+ firstNumber + "with Square root "+ firstNumberSquareRoot +" has a higher square root than the number "+secondNumber +" with square root " + secondNumberSquareRoot;
+                } else if (firstNumberSquareRoot < secondNumberSquareRoot){
+                    output = "The number "+ secondNumber + "with Square root "+ secondNumberSquareRoot +" has a higher square root than the number "+firstNumber +" with square root " + firstNumberSquareRoot;
+                } else if (firstNumberSquareRoot == secondNumberSquareRoot){
+                    output = "You inputted similiar numbers, kindly ennter different numbers";
+                }
+            }
+
+            return output;
+        }
+
         public IActionResult Privacy()
         {
             return View();
